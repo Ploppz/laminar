@@ -18,7 +18,7 @@ use std::{
 #[derive(Debug)]
 pub struct Socket {
     socket: UdpSocket,
-    config: Config,
+    pub config: Config,
     connections: ActiveConnections,
     recv_buffer: Vec<u8>,
     link_conditioner: Option<LinkConditioner>,
